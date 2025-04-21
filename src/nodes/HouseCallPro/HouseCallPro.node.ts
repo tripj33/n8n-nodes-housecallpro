@@ -1419,12 +1419,12 @@ export class HouseCallPro implements INodeType {
                 const options: IHttpRequestOptions = {
                     method: method as IHttpRequestMethods,
                     headers: {
-                        'Authorization': `Bearer ${credentials.apiKey}`,
+                        'Authorization': `${credentials.apiKey}`,
                         'Content-Type': 'application/json',
                     },
                     body: method !== 'GET' ? body : undefined,
                     qs,
-                    url: `https://api.housecallpro.com/v1${endpoint}`,
+                    url: `https://api.housecallpro.com/${endpoint}`,
                     json: true,
                 };
 
