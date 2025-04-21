@@ -1424,7 +1424,7 @@ export class HouseCallPro implements INodeType {
                     },
                     body: method !== 'GET' ? body : undefined,
                     qs,
-                    url: `https://api.housecallpro.com/${endpoint}`,
+                    url: `https://api.housecallpro.com${endpoint}`,
                     json: true,
                 };
 

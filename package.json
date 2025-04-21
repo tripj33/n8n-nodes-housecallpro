@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-housecallpro",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "n8n community node that allows you to interact with the HouseCall Pro API in your n8n workflows",
   "keywords": ["n8n", "n8n-node", "housecall", "housecallpro", "workflow", "automation"],
   "license": "MIT",
