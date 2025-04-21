@@ -1,0 +1,36 @@
+{
+  "name": "n8n-nodes-housecallpro",
+  "version": "1.0.0",
+  "description": "n8n community node that allows you to interact with the HouseCall Pro API in your n8n workflows",
+  "keywords": ["n8n", "n8n-node", "housecall", "housecallpro", "workflow", "automation"],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp -r src/nodes/HouseCallPro/*.svg dist/nodes/HouseCallPro/",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/HouseCallProApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/HouseCallPro/HouseCallPro.node.js"
+    ]
+  },
+  "author": "",
+  "dependencies": {
+    "n8n-core": "^1.14.1",
+    "n8n-workflow": "^1.82.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  }
+}
